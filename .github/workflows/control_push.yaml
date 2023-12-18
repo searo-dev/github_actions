@@ -6,9 +6,10 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: test code
-        run: exit 5
-        continue-on-error: true
-        
+        run: |
+          exit 5
+          continue-on-error: true
+
       - name: Checkout on master
         uses: actions/checkout@v3
 
