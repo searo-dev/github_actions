@@ -8,7 +8,7 @@ jobs:
       - name: test code
         run: |
           exit 5
-          continue-on-error: true
+        continue-on-error: true
 
       - name: Checkout on master
         uses: actions/checkout@v3
